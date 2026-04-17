@@ -4,7 +4,7 @@ function Home() {
   return (
     <section className="home">
       <div className="home__avatar">
-        <span>CA</span>
+        <img src="/images/avatar.png" alt="Clever Amaya" />
       </div>
 
       <div className="home__content">

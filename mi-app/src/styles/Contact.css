@@ -75,3 +75,16 @@
     transform: translateY(0);
   }
 }
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1.5rem;
+  }
+
+  .contact__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__title {
+    font-size: 1.8rem;
+  }
+}
