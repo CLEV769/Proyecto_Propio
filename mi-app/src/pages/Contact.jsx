@@ -1,4 +1,4 @@
-import { FaEnvelope, FaGithub, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { FaEnvelope, FaGithub, FaWhatsapp, FaInstagram, FaFileAlt, FaDownload, FaEye } from 'react-icons/fa';
 import '../styles/Contact.css';
 
 const contacts = [
@@ -50,7 +50,7 @@ function Contact() {
             target="_blank"
             rel="noreferrer"
             className="contact__card"
-          >
+>
             <div className="contact__icon">{contact.icon}</div>
             <div className="contact__info">
               <span className="contact__label">{contact.label}</span>
@@ -58,6 +58,33 @@ function Contact() {
             </div>
           </a>
         ))}
+      </div>
+
+      <div className="cv__section">
+        <div className="cv__header">
+          <FaFileAlt className="cv__icon" />
+          <div>
+            <h2 className="cv__title">Hoja de Vida</h2>
+            <p className="cv__subtitle">Puedes verla o descargarla directamente</p>
+          </div>
+        </div>
+        <div className="cv__buttons">
+          <a
+            href="/Hoja_de_vida_Clever_Amaya.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="cv__btn cv__btn--view"
+          >
+            <FaEye /> Ver PDF
+          </a>
+          <a
+            href="/Hoja_de_vida_Clever_Amaya.pdf"
+            download="Hoja_de_vida_Clever_Amaya.pdf"
+            className="cv__btn cv__btn--download"
+          >
+            <FaDownload /> Descargar
+          </a>
+        </div>
       </div>
     </section>
   );
