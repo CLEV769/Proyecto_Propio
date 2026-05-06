@@ -7,7 +7,9 @@ const skills = [
   { name: 'React', level: 50, category: 'Frontend' },
   { name: 'Python', level: 75, category: 'Backend' },
   { name: 'Java', level: 60, category: 'Backend' },
-  { name: 'Django', level: 40, category: 'Backend' },
+  { name: 'Django', level: 55, category: 'Backend' },
+  { name: 'Mysql', level: 70, category: 'database'},
+  { name: 'PostgreSQL', level: 40, category: 'database'},
 ];
 
 function Skills() {
@@ -45,6 +47,25 @@ function Skills() {
           <h2 className="skills__group-title">Backend</h2>
           {skills
             .filter(skill => skill.category === 'Backend')
+            .map(skill => (
+              <div className="skill" key={skill.name}>
+                <div className="skill__info">
+                  <span className="skill__name">{skill.name}</span>
+                  <span className="skill__percent">{skill.level}%</span>
+                </div>
+                <div className="skill__bar">
+                  <div
+                    className="skill__fill"
+                    style={{ width: `${skill.level}%` }}
+                  />
+                </div>
+              </div>
+            ))}
+        </div>
+        <div className="skills__group">
+          <h2 className="skills__group-title">Bases de datos</h2>
+          {skills
+            .filter(skill => skill.category === 'database')
             .map(skill => (
               <div className="skill" key={skill.name}>
                 <div className="skill__info">
