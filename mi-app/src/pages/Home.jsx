@@ -19,8 +19,7 @@ function Home() {
         </p>
 
         <p className="home__bio">
-          Mi stack incluye <strong>HTML, CSS, JavaScript y React</strong> en el frontend,
-          y <strong>Python, Java y Django</strong> en el backend. Me apasiona seguir creciendo,
+          Mi stack incluye <strong>HTML, CSS, JavaScript y React</strong> en el frontend, <strong>Python, Java y Django</strong> en el backend y como bases de datos <strong>Mysql y PostgreSQL</strong>. Me apasiona seguir creciendo,
           aprender nuevas tecnologías y adaptarme a diferentes proyectos y necesidades.
         </p>
 
