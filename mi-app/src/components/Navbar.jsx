@@ -26,6 +26,11 @@ function Navbar() {
             Contacto
           </Link>
         </li>
+        <li>
+          <Link to="/projects" className={location.pathname === '/projects' ? 'active' : ''}>
+            Proyectos
+          </Link>
+        </li>
       </ul>
     </nav>
   );
