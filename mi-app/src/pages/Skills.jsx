@@ -3,13 +3,14 @@ import '../styles/Skills.css';
 const skills = [
   { name: 'HTML', level: 90, category: 'Frontend' },
   { name: 'CSS', level: 85, category: 'Frontend' },
-  { name: 'JavaScript', level: 55, category: 'Frontend' },
-  { name: 'React', level: 50, category: 'Frontend' },
+  { name: 'JavaScript', level: 70, category: 'Frontend' },
+  { name: 'React', level: 70, category: 'Frontend' },
   { name: 'Python', level: 75, category: 'Backend' },
-  { name: 'Java', level: 60, category: 'Backend' },
-  { name: 'Django', level: 55, category: 'Backend' },
+  { name: 'Java', level: 70, category: 'Backend' },
+  { name: 'Django', level: 60, category: 'Backend' },
   { name: 'Mysql', level: 70, category: 'database'},
-  { name: 'PostgreSQL', level: 40, category: 'database'},
+  { name: 'PostgreSQL', level: 50, category: 'database'},
+  { name: 'Supabase', level: 50, category: 'database'},
 ];
 
 function Skills() {
